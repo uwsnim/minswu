@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seu Nome | Galeria e Blog de Arte</title>
+<meta name="description" content="Portfólio e blog de arte: pinturas, ilustrações e o processo criativo por trás de cada obra.">
+<!-- Ao publicar: apague as marcas de comentário da linha abaixo e troque pelo seu domínio -->
+<!-- <link rel="canonical" href="https://seudominio.com.br" /> -->
+<link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header><div class="container barra">
+<a class="logo" href="./index.html">Seu Nome</a>
+<nav aria-label="Menu principal"><a href="./index.html" aria-current="page">Galeria / Blog</a><a href="./sobre.html">Sobre</a><a href="./sobre.html#contato">Contato</a></nav>
+</div></header>
+<main>
+<section class="apresentacao container">
+<h1>Oi! Aqui eu guardo minhas pinturas e ilustrações.</h1>
+<p>Sou a Seu Nome e, em cada post, conto como cada obra nasceu: ideias, rabiscos, tintas e tropeços.</p>
+</section>
+<section class="container" aria-labelledby="titulo-galeria">
+<h2 id="titulo-galeria">Galeria</h2>
+<div class="filtros" role="group" aria-label="Filtrar por categoria">
+<button type="button" data-filtro="todas" aria-pressed="true">Todas</button>
+<button type="button" data-filtro="pintura" aria-pressed="false">Pinturas</button>
+<button type="button" data-filtro="ilustracao" aria-pressed="false">Ilustrações</button>
+</div>
+<div class="grade">
+<article class="card" data-categoria="pintura">
+<a href="./post-modelo.html"><img src="./img/arte-01.svg" alt="Jardim de Domingo: Pintura de Seu Nome" width="600" height="450" loading="lazy"></a>
+<div class="card-corpo"><span class="tag">Pintura</span><h3><a href="./post-modelo.html">Jardim de Domingo</a></h3>
+<time datetime="2026-11-10">10 de novembro de 2026</time><p>Flores, tinta acrílica e uma tarde sem pressa. Conto aqui como as cores foram surgindo.</p></div>
+</article>
+<article class="card" data-categoria="ilustracao">
+<a href="./post-modelo.html"><img src="./img/arte-02.svg" alt="Gatinha da Lua: Ilustração de Seu Nome" width="600" height="450" loading="lazy"></a>
+<div class="card-corpo"><span class="tag">Ilustração</span><h3><a href="./post-modelo.html">Gatinha da Lua</a></h3>
+<time datetime="2026-10-28">28 de outubro de 2026</time><p>Uma gata que passeia pelo céu à noite. Do rabisco no caderno à versão final.</p></div>
+</article>
+<article class="card" data-categoria="pintura">
+<a href="./post-modelo.html"><img src="./img/arte-03.svg" alt="Tarde Violeta: Pintura de Seu Nome" width="600" height="450" loading="lazy"></a>
+<div class="card-corpo"><span class="tag">Pintura</span><h3><a href="./post-modelo.html">Tarde Violeta</a></h3>
+<time datetime="2026-10-12">12 de outubro de 2026</time><p>Estudo de luz no fim do dia, com muito roxo e uma pitada de amarelo.</p></div>
+</article>
+<article class="card" data-categoria="ilustracao">
+<a href="./post-modelo.html"><img src="./img/arte-04.svg" alt="Café com Estrelas: Ilustração de Seu Nome" width="600" height="450" loading="lazy"></a>
+<div class="card-corpo"><span class="tag">Ilustração</span><h3><a href="./post-modelo.html">Café com Estrelas</a></h3>
+<time datetime="2026-09-30">30 de setembro de 2026</time><p>Uma xícara, algumas estrelas e o passo a passo de como cheguei nessa paleta.</p></div>
+</article>
+</div>
+</section>
+</main>
+<footer><p>© <span id="ano">2026</span> Seu Nome. Feito com carinho.</p></footer>
+<script src="./js/main.js"></script>
+</body>
+</html>
